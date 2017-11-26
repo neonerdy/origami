@@ -1,0 +1,66 @@
+﻿
+/*===========================================================
+ * 
+ * Origami (Object Relational Gateway Microarchitecture)
+ * 
+ * Lightweight Enterprise Application Framework
+ * 
+ * Version  : 3.0
+ * Author   : Ariyanto
+ * E-Mail   : neonerdy@yahoo.com
+ * 
+ * © 2008 XERIS System Interface
+ * 
+ * Under Apache Licence
+ * 
+ *==========================================================
+ */
+
+using System;
+
+namespace Origami.Container
+{
+    public class PropertyCollectionInjector
+    {
+
+        public static void SetValue<T>(T entity, string objectId)
+        {
+            PropertySettingCollection objectProperties = ObjectFinder.GetObjectCollection(objectId);
+            if (objectProperties.Count > 0)
+            {
+                foreach (PropertySetting property in objectProperties)
+                {
+                    string objRef=ObjectFinder.GetObjectPropertyRef(objectId, property.Name);
+                    if (objRef != null)
+                    {
+                        string propRefFullName = ObjectFinder.GetObjectType(objRef);
+                        Type propRefType = System.Type.GetType(propRefFullName);
+
+                        object propRefInstance = Activator.CreateInstance(propRefType);
+                        SetValue(propRefInstance, objRef);
+
+                        PropertyInjector.SetValue(entity,property.Name, propRefInstance);                   
+                    }
+                    else
+                    {
+                        PropertyInjector.SetValue(entity,property.Name,property.Value);
+                    }
+                }
+            }
+        }
+
+        private static void SetValue(object entity, string objectId)
+        {
+            PropertySettingCollection objectProperties = ObjectFinder.GetObjectCollection(objectId);
+            if (objectProperties.Count > 0)
+            {
+                foreach (PropertySetting property in objectProperties)
+                {
+                    PropertyInjector.SetValue(entity, property.Name,property.Value);
+                }
+            }
+        }
+
+
+    }
+}

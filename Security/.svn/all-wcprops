@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/28504/Security
+END
+ActiveDirectoryHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28504/Security/ActiveDirectoryHelper.cs
+END
+XmlAuthentication.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28504/Security/XmlAuthentication.cs
+END
+AuthenticationProviderFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/28504/Security/AuthenticationProviderFactory.cs
+END
+IAuthenticationProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/28504/Security/IAuthenticationProvider.cs
+END
+DbAuthentication.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28504/Security/DbAuthentication.cs
+END

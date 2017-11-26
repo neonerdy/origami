@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/28504/Container
+END
+ObjectFinder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/28504/Container/ObjectFinder.cs
+END
+PropertyCollectionInjector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/28504/Container/PropertyCollectionInjector.cs
+END
+IRegistry.cs
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/28504/Container/IRegistry.cs
+END
+PropertyInjector.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/28504/Container/PropertyInjector.cs
+END
+Singleton.cs
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/28504/Container/Singleton.cs
+END
+ConfigurationHandler.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/28504/Container/ConfigurationHandler.cs
+END
+ObjectContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28504/Container/ObjectContainer.cs
+END

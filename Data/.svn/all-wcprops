@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 24
+/svn/!svn/ver/28504/Data
+END
+DataContext.cs
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/28504/Data/DataContext.cs
+END
+Transformer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/28504/Data/Transformer.cs
+END
+DbCommandWrapper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/28504/Data/DbCommandWrapper.cs
+END
+DbHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/28504/Data/DbHelper.cs
+END
+Query.cs
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/28504/Data/Query.cs
+END
+Transaction.cs
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/28504/Data/Transaction.cs
+END
+DataContextFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/28504/Data/DataContextFactory.cs
+END
+ConnectionFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/28504/Data/ConnectionFactory.cs
+END
+IDataContext.cs
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/28504/Data/IDataContext.cs
+END
+IDataMapper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/28504/Data/IDataMapper.cs
+END
+IRepository.cs
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/28504/Data/IRepository.cs
+END
+DataSource.cs
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/28504/Data/DataSource.cs
+END

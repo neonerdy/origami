@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/28504/Security/Cryptography
+END
+HashProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/28504/Security/Cryptography/HashProvider.cs
+END
+HashCryptography.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/28504/Security/Cryptography/HashCryptography.cs
+END
+SymmetricProvider.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/28504/Security/Cryptography/SymmetricProvider.cs
+END
+SymmetricCryptography.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/28504/Security/Cryptography/SymmetricCryptography.cs
+END
+AsymmetricCryptography.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/28504/Security/Cryptography/AsymmetricCryptography.cs
+END

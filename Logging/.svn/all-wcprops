@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/28504/Logging
+END
+MessagingLogger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/28504/Logging/MessagingLogger.cs
+END
+Appender.cs
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/28504/Logging/Appender.cs
+END
+TraceLogger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/28504/Logging/TraceLogger.cs
+END
+FileLogger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/28504/Logging/FileLogger.cs
+END
+EventLogger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/28504/Logging/EventLogger.cs
+END
+ConsoleLogger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/28504/Logging/ConsoleLogger.cs
+END
+SmtpLogger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/28504/Logging/SmtpLogger.cs
+END
+DbLogger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/28504/Logging/DbLogger.cs
+END
+LoggerFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/28504/Logging/LoggerFactory.cs
+END
+ILogger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/28504/Logging/ILogger.cs
+END
+NullLogger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/28504/Logging/NullLogger.cs
+END
+Severity.cs
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/28504/Logging/Severity.cs
+END

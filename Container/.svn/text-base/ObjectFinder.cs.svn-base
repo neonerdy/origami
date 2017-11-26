@@ -1,0 +1,138 @@
+﻿
+/*===========================================================
+ * 
+ * Origami (Object Relational Gateway Microarchitecture)
+ * 
+ * Lightweight Enterprise Application Framework
+ * 
+ * Version  : 3.0
+ * Author   : Ariyanto
+ * E-Mail   : neonerdy@yahoo.com
+ * 
+ * © 2008 XERIS System Interface
+ * 
+ * Under Apache Licence
+ * 
+ *==========================================================
+ */
+
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+
+namespace Origami.Container
+{
+    public class ObjectFinder
+    {
+        public static bool IsObjectHasProperty(string objectId)
+        {
+            PropertySettingCollection objectProperties = GetObjectCollection(objectId);
+            return objectProperties.Count > 0;
+        }
+
+        public static PropertySettingCollection GetObjectCollection(string objectId)
+        {
+            PropertySettingCollection objects = null;
+            bool found = false;
+
+            ConfigurationHandler section = ConfigurationManager.GetSection("objects") as ConfigurationHandler;
+            foreach (ObjectSection obj in section.Objects)
+            {
+                if (obj.Id.Equals(objectId))
+                {
+                    objects = obj.ObjectProperties;
+                    found = true;
+                    break;
+                }
+            }
+            if (!found)
+            {
+                throw new Exception("Object '" + objectId + "' not found");
+            }
+
+            return objects;
+
+        }
+
+
+        public static string GetObjectType(string objectId)
+        {
+            string objType = string.Empty;
+            bool found = false;
+
+            ConfigurationHandler section = ConfigurationManager.GetSection("objects") as ConfigurationHandler;
+            foreach (ObjectSection obj in section.Objects)
+            {
+                if (obj.Id.Equals(objectId))
+                {
+                    objType = obj.Type;
+                    found = true;
+                }
+            }
+            if (!found)
+            {
+                throw new Exception("Object '" + objectId + "' not found");
+            }
+            return objType;
+        }
+
+
+
+        public static string GetObjectProperty(string objectId, string propertyName)
+        {
+            string value = string.Empty;
+            bool found = false;
+
+            ConfigurationHandler section = ConfigurationManager.GetSection("objects") as ConfigurationHandler;
+            foreach (ObjectSection obj in section.Objects)
+            {
+                string objId = obj.Id;
+                foreach (PropertySetting el in obj.ObjectProperties)
+                {
+                    if (objId.Equals(objectId) && el.Name.Equals(propertyName))
+                    {
+                        value = el.Value;
+                        found = true;
+                        break;
+                    }
+                }
+            }
+            if (!found)
+            {
+                throw new Exception("Object '" + objectId + "' or property '" + propertyName + "' not found");
+            }
+            return value;
+
+        }
+
+        public static string GetObjectPropertyRef(string objectId, string propertyName)
+        {
+            string propertyRef = string.Empty;
+            bool found = false;
+
+            ConfigurationHandler section = ConfigurationManager.GetSection("objects") as ConfigurationHandler;
+            foreach (ObjectSection obj in section.Objects)
+            {
+                string objId = obj.Id;
+                foreach (PropertySetting el in obj.ObjectProperties)
+                {
+                    if (objId.Equals(objectId) && el.Name.Equals(propertyName))
+                    {
+                        propertyRef = el.ClassRef;
+                        found = true;
+                        break;
+                    }
+                }
+            }
+            if (!found)
+            {
+                throw new Exception("Object '" + objectId + "' or property ref '" + propertyName + "' not found");
+            }
+            return propertyRef;
+
+        }
+
+
+
+    }
+}
