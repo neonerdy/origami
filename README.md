@@ -4,7 +4,7 @@
 
 Origami is lightweight enterprise application framework in .NET platform. Contains 4 application blocks : Container, Data, Logging, and Security.
 
-Features :
+## Features :
 
 - Simplify manage object construction and its depedency
 - Support Depedency Injection and plugable architecture 
@@ -18,7 +18,7 @@ Features :
 - Cryptography support : symmetric, asymmetric, and hash 
 
 
-Classic ADO.NET
+## Classic ADO.NET
 
 ```
 string connStr = @"Data Source=XERIS\SQLEXPRESS;"
@@ -39,7 +39,7 @@ rdr.Dispose();
 
 ```
 
-Origami Way
+## Origami Way
 
 ```
 DataSource dataSource = new DataSource();
@@ -62,7 +62,7 @@ rdr.Dispose();
 
 ```
 
-Using Data Mapper
+## Using Data Mapper
 
 ```
 IDataContext dx = DataContextFactory.CreateInstance(dataSource);
